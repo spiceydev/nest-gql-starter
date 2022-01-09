@@ -1,0 +1,37 @@
+{
+  "npmScope": "nx-nest-graphql",
+  "implicitDependencies": {
+    "workspace.json": "*",
+    "package.json": {
+      "dependencies": "*",
+      "devDependencies": "*"
+    },
+    "tsconfig.json": "*",
+    "nx.json": "*"
+  },
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "@nrwl/workspace/tasks-runners/default",
+      "options": {
+        "cacheableOperations": ["build", "lint", "test", "e2e"]
+      }
+    }
+  },
+  "projects": {
+    "api": {
+      "tags": []
+    },
+    "core": {
+      "tags": []
+    },
+    "data": {
+      "tags": []
+    },
+    "auth": {
+      "tags": []
+    },
+    "sdk": {
+      "tags": []
+    }
+  }
+}
